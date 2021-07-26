@@ -9,7 +9,7 @@ Tutorial Credit: Python Engineers & CSDojo
 #= Python Snake Game ==#
 #======================#
 
-#--Note: Consider using Replit to view game using terminal
+#--Note: Consider using Replit to view game in terminal
 #        Expanding the terminal window also improves visability
 
 from blessed import Terminal
