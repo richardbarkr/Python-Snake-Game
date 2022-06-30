@@ -36,7 +36,7 @@ BORDER = '🟦'
 SPACE = '  '
 
 #--CONFIGURE FOOD--#
-Apple = '🍏'
+APPLE = '🍏'
 
 #--INITIAL SNAKE POSITION--#
 snake = deque([[6, 5], [6, 4], [6, 3]])
@@ -79,7 +79,7 @@ with term.cbreak(), term.hidden_cursor():
     world[-1][j] = BORDER
   for s in snake:
     world[s[0]][s[1]] = BODY
-  world[food[0]][food[1]] = THUMBSUP
+  world[food[0]][food[1]] = APPLE
   for row in world:
     print(' '.join(row))
   print('Welcome')
@@ -121,11 +121,11 @@ with term.cbreak(), term.hidden_cursor():
     
     heading = world[head[0]][head[1]]
     ate_food = False
-    if heading == THUMBSUP:
+    if heading == APPLE:
       ate_food = True
       empty_spaces = list_empty_spaces(world, SPACE)
       food = random.choice(empty_spaces)
-      world[food[0]][food[1]] = THUMBSUP
+      world[food[0]][food[1]] = APPLE
       speed = min(MAX_SPEED, speed * 1.07)
     elif heading == BORDER:
       break
