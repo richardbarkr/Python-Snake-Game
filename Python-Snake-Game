@@ -13,7 +13,7 @@ Tutorial Credit: Python Engineer & CSDojo
 
 #--Note: Consider using Replit to view game using terminal
 #        Expanding the terminal window also improves visability
-#  https://replit.com/@Richardbarkr/Python-Snake?v=1#main.py
+#  https://replit.com/@Richardbarkr/Python-Snake-Game?v=1#main.py
 
 from blessed import Terminal
 import random
